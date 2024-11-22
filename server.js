@@ -1,13 +1,14 @@
 // Importar módulos necesarios
 const express = require('express');
 const mysql = require('mysql2');
+const cors = require('cors'); // Importar cors
 
 // Crear una aplicación de Express
 const app = express();
 
 // Configuración de puerto
 const PORT = 3001;
-
+app.use(cors());
 // Middleware para analizar JSON
 app.use(express.json());
 
