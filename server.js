@@ -1,6 +1,6 @@
 // Importar módulos necesarios
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 // Crear una aplicación de Express
 const app = express();
@@ -13,10 +13,11 @@ app.use(express.json());
 
 // Configuración de conexión a la base de datos MySQL
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'intercambio_navidad',
+    host: 'autorack.proxy.rlwy.net', // Hostname proporcionado
+    port: 23672, // Puerto proporcionado
+    user: 'root', // Usuario
+    password: 'gDvolcrIHTvtMfSpDxzyXYQAuEXKEOot', // Contraseña
+    database: 'railway' // Nombre de la base de datos
 });
 
 // Conexión a la base de datos
