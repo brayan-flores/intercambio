@@ -15,9 +15,9 @@ app.use(express.json());
 // Configuración de conexión a la base de datos MySQL
 const db = mysql.createConnection({
     host: 'autorack.proxy.rlwy.net', // Hostname proporcionado
-    port: 23672, // Puerto proporcionado
+    port: 50005, // Puerto proporcionado
     user: 'root', // Usuario
-    password: 'gDvolcrIHTvtMfSpDxzyXYQAuEXKEOot', // Contraseña
+    password: 'kDGfrWPzBSmrfWHwhoChyUHjMYRliKHj', // Contraseña
     database: 'railway' // Nombre de la base de datos
 });
 
